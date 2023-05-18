@@ -1,0 +1,82 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+
+    background-color: #C4DFDF;
+    width:100%;
+}
+
+
+.container{
+    display: flex;
+    width:95% ;
+    margin: auto;
+    background-color: #C4DFDF;
+    border:4px solid black;    
+    
+}
+
+.todo{
+    background-color: #E3F4F4;
+    margin:2rem auto 2rem auto;
+    /*dinamik bir şekilde bulunan todo sayısına göre değişecek */
+    width: 45%;
+    height:fit-content;
+    border:1px solid gray;
+    border-radius: 5px;
+
+}
+
+.todoHeaderSection{
+    background-color: #E3F4F4;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+
+.float-clear{
+    clear:both;
+}
+
+.singleTodo{
+    border: 1px solid gray;
+    margin: 0.6rem;
+    padding: 0.6rem 0.3rem 2rem 0.3rem;
+    border-radius: 5px;
+    background-color: #F8F6F4;
+
+}
+.todoMiniMenu{
+    float: right;
+    width: fit-content;
+    margin-right: 15px;
+    background-color: orange;
+}
+.todoInput{
+    margin-bottom: 2.3rem;
+    margin-inline: 0.6rem;
+}
+.todoInput textarea{
+    width: 100%;
+    height: 150px;
+    border-radius: 5px;
+    font-size: 1rem;
+    resize: none;
+    margin:10px 0 5px 0;
+    padding: 5px;
+    
+}
+.todoInput button{
+    width: 5rem;
+    height: 2rem;
+    border-radius: 5px;
+    float: right;
+    
+}
