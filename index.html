@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>TODO</title>
-    <script src="https://kit.fontawesome.com/9b84687d36.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
@@ -15,7 +16,16 @@
         <div class="todo">
             <div class="todoHeaderSection">
                 <span>TODO</span>
-                <div class="todoMiniMenu">Temizle Sil ...</div>
+                <div class="todoMiniMenu">
+                    
+                    <ol>
+                        <li id="todoClear">Temizle</li>
+                        <li id="todoDelete">Sil</li>
+                        <li id="todoRename">Yeniden Adlandır</li>
+                        <li id="todoShrink">^</li>
+                    </ol>
+
+                </div>
                 <div class="todoInput">
                     <textarea  cols="5" rows="10"></textarea>
                     <button>---</button>
@@ -25,38 +35,18 @@
             <div class="todos">
 
                 <div class="singleTodo">
-                    <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui delectus similique totam est voluptatem unde optio consequuntur aliquam! xxxx quos fugit odio ad ipsum nobis necessitatibus molestias dolore modi dolores.</span>
-                    <div style="background-color: brown;float: right;">
-                        <i class="fa-thin fa-trash"></i>
-                         X
+                    <div class="singleTodoText">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui delectus similique totam est voluptatem unde optio consequuntur aliquam! xxxx quos fugit odio ad ipsum nobis necessitatibus molestias dolore modi dolores.</div>
+                    <div class="singleTodoButtons">
+                        <i class="fa-solid fa-trash icons"></i> <br>
+                        <i class="fa-regular fa-circle icons"></i>
+                       <!--  <i class="fa-regular fa-circle-check icons"></i> -->
                     </div>
                 </div>
                 
             </div>
         </div>
 
-        <div class="todo">
-            <div class="todoHeaderSection">
-                <span>TODO</span>
-                <div class="todoMiniMenu">Temizle Sil ...</div>
-                <div class="todoInput">
-                    <textarea  cols="5" rows="10"></textarea>
-                    <button>---</button>
-                </div>
-            </div>
-            <div class="float-clear"></div>
-            <div>
-                
-                <div class="singleTodo">
-                    <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui delectus similique totam est voluptatem unde optio consequuntur aliquam! xxxx quos fugit odio ad ipsum nobis necessitatibus molestias dolore modi dolores.</span>
-                    <div style="background-color: brown;float: right;">
-                        <i class="fa-thin fa-trash"></i>
-                         X
-                    </div>
 
-                </div>
-            </div>
-        </div>
 
     </div>
     
