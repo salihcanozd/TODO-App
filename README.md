@@ -1,1 +1,1 @@
-Birden fazla bölümden oluşan TODO uygulaması 
+TODO APP

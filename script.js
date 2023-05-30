@@ -8,7 +8,7 @@ const todoButton =document.getElementsByTagName("button");
 const todos = document.getElementsByClassName("todos");
 const todoClear = document.getElementById("todoClear");
 const singleTodos = document.getElementsByClassName("singleTodo");
-
+const hide = document.getElementById("hide");
 /* textarea'dan aldığı singleTodo'yu todos'a ekliyor ve textarea içeriğini temizliyor.   */
 function todoTextAreaText(index){
   const todoText = todoTextArea[index].value;
@@ -32,7 +32,13 @@ function todoTextAreaText(index){
   todoTextArea[index].value = "";      
 }
 
+hide.addEventListener("click",()=>{
+  if(todos[0].classList.contains("hidden")){
+    todos[0].classList.remove("hidden");}
 
+  else{todos[0].classList.add("hidden")};  
+  
+  })
 
 // tüm yapılacak listesini siler
 todoClear.addEventListener("click",()=>{
